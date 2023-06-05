@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Suzie's Survey</title>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+      <h1 id="title">My First Survey</h1>
+      <p id="description">It will only take 2 minutes!</p>
+      <form id="survey-form">
+        
+        <fieldset>
+          <label id="name-label">What's your name?
+            <input required id="name" type="text" placeholder="First Name, Last Name"/>
+          </label>
+
+          <label id="email-label">What's your email?
+            <input required id="email" type="email" placeholder="Email"/>
+          </label>
+
+          <label id="number-label">What's your number?
+            <input required id="number" type="number" min="1" max="101" placeholder="Age"/>
+          </label>
+        </fieldset>
+        <fieldset>
+          <select id="dropdown"> Select your favorite language:
+            <option value="0">Choose one</option>
+            <option value="1">Python</option>
+            <option value="2">Javascript</option>
+            <option value="3">C</option>
+            <option value="4">C#</option>
+          </select>
+
+          <label for="novice">
+            <input class="inline" id="novice" type="radio" name="experience" value="None"/>Novice
+          </label>
+
+          <label for="begginer">
+            <input class="inline" id="begginer" type="radio" name="experience" value="Some"/>Begginer
+          </label>
+
+          <label for= "intermediate">
+            <input class="inline" id="intermediate" type="radio" name="experience" value=" A bit"/>Intermediate
+          </label>
+        </fieldset>
+
+        <fieldset> What's your preferred method of learning?
+          <label for="medium1">
+            <input id="medium1" class="inline" type="checkbox" name="medium1" value="YouTube"/>YouTube
+          </label>
+
+          <label for="medium2">
+            <input id="medium2" class="inline" type="checkbox" name="medium2" value="Books"/>Books
+          </label>
+          <label for="medium3">
+            <input id="medium3" class="inline" type="checkbox" name="medium3" value="StackOverflow"/>StackOverflow
+          </label>
+      </fieldset>
+        <label>Comments:
+        <textarea id="comments" rows="3" cols="40" placeholder="Please Leave a Comment"></textarea>
+        </label>
+
+        <label>
+          <button id="submit" type="submit">SUBMIT</button>
+          </label>
+      </form>
+    </body>
+
+  </html>
